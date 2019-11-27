@@ -22,6 +22,7 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'end',
+        overflow: 'hidden',
     },
     topicsWindow: {
         width: '30%',
@@ -48,6 +49,9 @@ const useStyles = makeStyles(theme => ({
         color: '#fff',
         height: '48px',
         marginLeft: '17px',
+        '&:hover': {
+            backgroundColor: '#123045bf',
+        },
     },
     buttonback: {
         color: '#fff',
@@ -66,6 +70,9 @@ const useStyles = makeStyles(theme => ({
         borderRadius: '19px',
         fontWeight: '500',
     },
+    marginBottom: {
+        marginBottom: '30px',
+    },
 }));
 
 export default function Dashboard() {
@@ -83,10 +90,10 @@ export default function Dashboard() {
         <div>
            <Paper className={classes.root}>
                 <Typography variant="h4" component="h4">
-                    Chat App
+                    Chat-App
                 </Typography>
-                <Typography variant="h5" component="h5">
-                    {activeTopic}
+                <Typography variant="h5" component="h5" className={classes.marginBottom}>
+                    #{activeTopic}
                 </Typography>
 
                 <div className={classes.flex}>

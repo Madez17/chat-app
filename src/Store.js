@@ -5,15 +5,20 @@ export const CTX = React.createContext();
 
 const initState = {
     general: [
-        {from: 'Juan', msg: 'Hi'},
+        {from: 'Carlos', msg: 'Hi Maria!'},
         {from: 'María', msg: 'Hello'},
-        {from: 'Carlos', msg: 'Hi'},
+        {from: 'Carlos', msg: 'dummy text of the printing and typesetting industry'},
     ],
-    topic2: [
+    Technology: [
+        {from: 'Juan', msg: 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'},
+        {from: 'Alex', msg: 'is simplys standard dummy'},
         {from: 'Juan', msg: 'Hi'},
-        {from: 'Juan', msg: 'Hi'},
-        {from: 'Juan', msg: 'Hi'},
-    ]
+    ],
+    Social: [
+        {from: 'sam', msg: 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'},
+        {from: 'Alex', msg: 'is simplys standard dummy'},
+        {from: 'David', msg: 'Hi'},
+    ],
 }
 
 function reducer(state, action) {

@@ -119,7 +119,7 @@ export default function Dashboard() {
                 <div className={classes.flex, classes.buttonback}>
                     <TextField
                       id="standard-name"
-                      label="Send a chat"
+                      placeholder="Send a chat"
                       className={classes.chatBox}
                       value={textValue}
                       onChange={e => changeTextValue(e.target.value)}
@@ -127,10 +127,11 @@ export default function Dashboard() {
 
                     <Button
                         variant="contained"
+                        color='' 
                         className={classes.button}
                         onClick={() => {
                             sendChatAction(textValue);
-                            changeTextValue();
+                            changeTextValue('');
                         }}
                     >
                         Send
